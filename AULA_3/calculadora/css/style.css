@@ -1,0 +1,12 @@
+body{
+    background-color: aqua;
+    color: brown;
+    text-align: center;
+}
+
+.container{
+    color: blue;
+    width: 70%;
+    margin: auto;
+    box-shadow: 0 15px 20px white;
+}
