@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMC</title>
+    <title>CALCULADORA IMC</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <h1>CALCULADORA IMC</h1>
-        <div class="altura">
-            <label for="divAltura">Altura (M²)</label>
-            <input type="number" id="altura" />
+      <div class="container">
+        <div class="title">BEM-VINDO À CALCULADORA DO WESLEY MENDES!</div>
+        <div class="input">
+            <label>Nome:</label>
+            <input type="text" id='nome'>
         </div>
-        <div class="divPeso">
-            <label for="peso">Peso (Kg²)</label>
-            <input type="number" id="peso" />
-        </div>
-        <div class="sexo">
-            <label for="divSexo">Informe seu sexo:</label>
-            <select name="sexo" id="listasexo" form="carfomr">
-            <option value="masc">Masculino</option>
-            <option value="fem">Feminino</option>
+        <label for="sexo">Sexo:</label>
+        <select id="sexo">   
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
         </select>
+        <div class="input">
+            <label>Altura:</label>
+            <input type="number" id='altura'>
         </div>
-        <div class="divCalc">
-            <button onclick="calcIMC()">Calcular</button>
+        <div class="input">
+            <label>Peso:</label>
+            <input type="number" id='peso'>
         </div>
-        <span id="resultado"></span>
+        <button id='calcular'>Calcular</button>
+
+        <div class="result" id='resultado'></div>
+      </div>
     </main>
     <script src="js/calculadora.js"></script>
-</body>
+  </body>
 </html>
