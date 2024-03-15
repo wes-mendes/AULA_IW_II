@@ -1,4 +1,13 @@
 body{
     background-color: black;
     color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.estrutura{
+    border: solid;
+    border-radius: 2px;
+    padding: 20px;
 }
