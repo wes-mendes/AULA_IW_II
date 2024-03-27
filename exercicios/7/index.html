@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 7</title>
+</head>
+<style>
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+
+<body>
+    <h1>Reajuste Salarial</h1>
+
+    <button onclick="reajuste()">Executar Reajuste Salarial</button>
+
+    <script>
+        function reajuste() {
+
+            var nomeFuncionario = prompt("Por favor, insira o nome do funcionário:");
+
+            if (nomeFuncionario === null || nomeFuncionario === "") {
+                alert("Por favor, insira um nome de funcionário válido.");
+                return;
+            }
+
+            var salarioAtualTexto = prompt("Por favor, insira o salário atual de " + nomeFuncionario + ":");
+            var salarioAtual = parseFloat(salarioAtualTexto);
+
+            if (isNaN(salarioAtual) || salarioAtual <= 0) {
+                alert("Por favor, insira um salário válido.");
+                return;
+            }
+
+            var porcentagemReajusteTexto = prompt("Por favor, insira a porcentagem de reajuste salarial para " + nomeFuncionario + ":");
+            var porcentagemReajuste = parseFloat(porcentagemReajusteTexto);
+
+            if (isNaN(porcentagemReajuste) || porcentagemReajuste < 0) {
+                alert("Por favor, insira uma porcentagem válida.");
+                return;
+            }
+
+            var novoSalario = salarioAtual * (1 + porcentagemReajuste / 100);
+
+            alert("O novo salário de " + nomeFuncionario + " após o reajuste de " + porcentagemReajuste + "% é: R$ " + novoSalario.toFixed(2));
+        }
+    </script>
+
+</body>
+
+</html>

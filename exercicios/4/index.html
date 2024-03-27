@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXERCICIO 4</title>
     <style>
-        .button {
-          margin: 10px;
-          padding: 10px 20px;
-          font-size: 16px;
-          cursor: pointer;
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
         }
-      </style>
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    <button class="button" onclick="mudarCorTexto('vermelho')">Vermelho</button>
-<button class="button" onclick="mudarCorTexto('azul')">Azul</button>
-<button class="button" onclick="mudarCorTexto('verde')">Verde</button>
 
-<div id="texto" style="margin-top: 20px;">Este texto pode mudar de cor!</div>
+    <h1>INTERAGINDO COM O USUÁRIO</h1>
 
-<script>
-  function mudarCorTexto(cor) {
-    var elementoTexto = document.getElementById('texto');
-    switch(cor) {
-      case 'vermelho':
-        elementoTexto.style.color = 'red';
-        break;
-      case 'azul':
-        elementoTexto.style.color = 'blue';
-        break;
-      case 'verde':
-        elementoTexto.style.color = 'green';
-        break;
-      default:
-        elementoTexto.style.color = 'black';
-        break;
-    }
-  }
-</script>
+    <p id="cor">Clique em um dos botões acima para ver a cor correspondente.</p>
+
+    <button onclick="alterarTexto('b1', 'blue')">azul</button>
+    <button onclick="alterarTexto('b2', 'green')">verde</button>
+    <button onclick="alterarTexto('b3', 'red')">vermelho</button>
+
+    <script>
+        function alterarTexto(botao, cor) {
+            var corParagrafo = document.getElementById('cor');
+            corParagrafo.textContent = "A cor do botão é essa do texto!";
+            corParagrafo.style.color = cor;
+        }
+    </script>
+
 </body>
+
 </html>
