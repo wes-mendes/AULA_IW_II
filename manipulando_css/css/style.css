@@ -49,6 +49,21 @@ button {
     color: #121212;
 }
 
+#btblue {
+    background: #1a237e;
+    color: #fff;
+}
+
+#btyellow {
+    background: #ffc107;
+    color: #fff;
+}
+
+#btpink {
+    background: pink;
+    color: white;
+}
+
 /* botao dark */
 #btdark {
     background-color: #263238;
@@ -72,7 +87,7 @@ button {
     color: #fff;
 }
 
-.azul {
+.blue {
     background: #1a237e;
     color: #fff;
 }
@@ -83,7 +98,12 @@ button {
     border-radius: 5px;
     padding: 0.625rem;
 }
-.amarelo {
+.yellow {
     background: #ffc107;
     color: #fff;
+}
+
+.pink {
+    background: pink;
+    color: white;
 }

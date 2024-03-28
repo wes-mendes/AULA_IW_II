@@ -24,16 +24,48 @@ let tela = document.querySelector('main')
 
 let btnDark = document.querySelector('#btdark')
 
+let btnBlue = document.querySelector('#btblue')
+
+let btnYellow = document.querySelector('#btyellow')
+
+let btnPink = document.querySelector('#btpink')
+
 let btnLight = document.querySelector('#btlight')
 
 btnDark.addEventListener('click', modoDark)
+btnBlue.addEventListener('click', modoBlue)
+btnYellow.addEventListener('click', modoYellow)
 btnLight.addEventListener('click', modoLight)
+btnPink.addEventListener('click', modoPink)
 
 function modoDark() {
     event.preventDefault();
     console.log('modo dark')
     tela.classList.add("dark");
     tela.classList.remove("light");
+    tela.classList.remove("pink");
+    tela.classList.remove("blue");
+    tela.classList.remove("yellow");
+}
+
+function modoBlue() {
+    event.preventDefault();
+    console.log('modo blue')
+    tela.classList.add("blue");
+    tela.classList.remove("light");
+    tela.classList.remove("pink");
+    tela.classList.remove("yellow");
+    tela.classList.remove("dark");
+}
+
+function modoYellow() {
+    event.preventDefault();
+    console.log('modo yellow')
+    tela.classList.add("yellow");
+    tela.classList.remove("light");
+    tela.classList.remove("pink");
+    tela.classList.remove("blue");
+    tela.classList.remove("dark");
 }
 
 function modoLight() {
@@ -41,6 +73,19 @@ function modoLight() {
     console.log('modo light')
     tela.classList.remove("dark");
     tela.classList.add("light");
+    tela.classList.remove("pink");
+    tela.classList.remove("blue");
+    tela.classList.remove("yellow");
+}
+
+function modoPink() {
+    event.preventDefault();
+    console.log('modo pink')
+    tela.classList.add("pink");
+    tela.classList.remove("light");
+    tela.classList.remove("blue");
+    tela.classList.remove("yellow");
+    tela.classList.remove("dark");
 }
 
 /*
