@@ -12,3 +12,6 @@ http://wes-mendes.github.io/AULA_IW_II/AULA_4/calculadora_imc
 
 MANIPULANDO CSS
 http://wes-mendes.github.io/AULA_IW_II/manipulando_css/index.html
+
+JOGO DO MARIO
+http://wes-mendes.github.io/AULA_IW_II/jogo_do_mario/index.html
